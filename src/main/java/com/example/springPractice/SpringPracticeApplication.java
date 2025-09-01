@@ -8,7 +8,7 @@ public class SpringPracticeApplication {
 
 	public static void main(String[] args) {
 //		SpringApplication.run(SpringPracticeApplication.class, args);
-        System.out.println("Helo world");
+//        System.out.println("Helo world");
 	}
 
 }
