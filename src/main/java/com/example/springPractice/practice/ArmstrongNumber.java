@@ -1,5 +1,9 @@
 package com.example.springPractice.practice;
 
+import java.util.*;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
+
 public class ArmstrongNumber {
 
     static boolean isPalindrome(int num) {
@@ -67,5 +71,33 @@ public class ArmstrongNumber {
         }
 
         System.out.println("String without duplicates: " + result);
+
+        String newName = "arunkumar";
+        StringBuilder seen = new StringBuilder();
+        HashSet<Character> abc = new HashSet <>();
+
+        for(int i=0;i<newName.length();i++){
+            char a= newName.charAt(i);
+            if(!abc.contains(a)){
+                abc.add(a);
+                seen.append(a);
+            }
+        }
+
+        System.out.println("duplicates: =one" + seen.toString());
+
+        List<String> lst = Arrays.asList("arun","kumar");
+        List<String> lstOne = lst.stream().map(i -> i.toUpperCase()).collect(Collectors.toList());
+        System.out.println(lstOne);
+
+        String[] name = {"a","b","a"};
+        int [] exp = {2,4,1};
+        Map<String, Integer> abcd = new HashMap<>();
+        for(int i=0;i<name.length;i ++){
+            abcd.put(name[i], exp[i]);
+        }
+        for (Map.Entry<String, Integer> entry : abcd.entrySet()) {
+            System.out.println("Key: " + entry.getKey() + ", Value: " + entry.getValue());
+        }
     }
 }
