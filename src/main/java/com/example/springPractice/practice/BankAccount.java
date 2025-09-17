@@ -56,22 +56,22 @@ public class BankAccount {
         System.out.println("Interest Rate: " + interestRate + "%");
     }
 
-    public static void main(String[] args) {
-
-        BankAccount acc1 = new BankAccount("Arun", "A1001", 5000);
-        BankAccount acc2 = new BankAccount("Kumar", "A1002", 8000);
-
-
-        acc1.deposit(2000);
-        acc1.withdraw(1000);
-
-        acc2.withdraw(9000);
-
-
-        System.out.println(acc1.getAccountHolder() + " Balance: " + acc1.getBalance());
-        System.out.println(acc2.getAccountHolder() + " Balance: " + acc2.getBalance());
-
-
-        BankAccount.showBankInfo();
-    }
+//    public static void main(String[] args) {
+//
+//        ShapeMainClass acc1 = new ShapeMainClass("Arun", "A1001", 5000);
+//        ShapeMainClass acc2 = new ShapeMainClass("Kumar", "A1002", 8000);
+//
+//
+//        acc1.deposit(2000);
+//        acc1.withdraw(1000);
+//
+//        acc2.withdraw(9000);
+//
+//
+//        System.out.println(acc1.getAccountHolder() + " Balance: " + acc1.getBalance());
+//        System.out.println(acc2.getAccountHolder() + " Balance: " + acc2.getBalance());
+//
+//
+//        ShapeMainClass.showBankInfo();
+//    }
 }
