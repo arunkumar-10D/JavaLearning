@@ -1,8 +1,9 @@
 package com.example.springPractice.practice;
 
+import java.io.Serializable;
 import java.util.Objects;
 
-public class Student {
+public class Student implements Serializable {
     private String name;
     private int age;
     private double mark;
