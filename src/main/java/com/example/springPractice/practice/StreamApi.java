@@ -7,6 +7,8 @@ public class StreamApi {
     public static void main(String[] args) {
 
         List<String> names = Arrays.asList("arun","kumar","vignesh","abdul","arun");
+        names.forEach(name -> System.out.println(name));
+        System.out.println("============");
         //list all from the list
         names.stream()
                 .forEach(System.out::println);
@@ -67,5 +69,8 @@ public class StreamApi {
                 .collect(Collectors.toList());
 
         entryStrings.forEach(System.out::println);
+        System.out.println("Entries==============");
+
+        map.forEach((k,v) -> System.out.println(k));
     }
 }
